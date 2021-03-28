@@ -75,10 +75,10 @@
      justify-content: space-evenly;
  }
 
-.nav-button {
-    justify-self: flex-end;
-}
+ .nav-button {
+     justify-self: flex-end;
+ }
 
-img {
-    max-width: 100%
-}
+ img {
+     max-width: 100%
+ }
