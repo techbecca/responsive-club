@@ -65,6 +65,10 @@
      list-style-type: none;
  }
 
+ nav a {
+     text-decoration: none;
+ }
+
  nav>ul {
      display: flex;
      flex-wrap: wrap;
@@ -73,4 +77,8 @@
 
 .nav-button {
     justify-self: flex-end;
+}
+
+img {
+    max-width: 100%
 }
