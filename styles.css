@@ -89,9 +89,6 @@ blockquote {
      padding: 3rem 5%;
  }
 
- img {
-     max-width: 100%
- }
 a {
     color: #331B8D;
 }
@@ -99,15 +96,32 @@ a {
     opacity: 0.5;
  }
 
+ /* IMAGES */
+ img {
+     max-width: 100%
+ }
+
+ .container {
+     /* width: 50%; */
+     /* height: 200px; */
+     overflow: hidden;
+ }
+
+ .container img {
+     max-width: 100%;
+     height: auto;
+     display: block;
+ }
+
  /*  BUTTONS etc */
  button, .button {
      padding: 0.7rem 1.4rem;
      border-radius: 5%;
+     text-decoration: none;
  }
  .primary-button {
       color: white;
       background-color: var(--primary-color);
-      
  }
 
  /* NAV */ 
