@@ -68,6 +68,7 @@
 
  nav>ul>li {
      list-style-type: none;
+     visibility: hidden;
  }
 
  nav a {
@@ -78,15 +79,20 @@
      display: flex;
      flex-wrap: wrap;
      justify-content: space-evenly;
+    padding-inline-start: 10%;
+    padding-inline-end: 10%;
  }
 
  .nav-button {
      justify-self: flex-end;
+     visibility: visible;
  }
 
  img {
      max-width: 100%
  }
+
+ /*  BUTTONS etc */
 
  /* PAGE SPECIFIC */
 
@@ -94,4 +100,8 @@
      text-align: center;
      margin-top: 3rem;
 
+ }
+
+ .intro > img {
+     margin-top: 2rem;
  }
