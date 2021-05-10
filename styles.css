@@ -2,8 +2,8 @@
  /* COLOR */
 :root {
     --primary-color:#811286;
-    --secondary-light-color:#866A93;
-    --secondary-dark-color:#7B3DCC;
+    --secondary-light-color:#E1D4DD;
+    --secondary-dark-color:#825A7D;
     --accent-color:#E46724;
     
 }
@@ -69,11 +69,24 @@
      display: block;
      font-size: 0.6em;
      margin-top: 1rem;
-    }
+}
+blockquote {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1.563rem;
+    font-style: italic;
+    font-family: 'Exo', sans-serif;
+    text-align: center;
+}
+.quote-author {
+        text-align: center;
+        font-size: 1.25rem;
+        font-family: 'Codystar', cursive;
+}
 
  /* STRUCTURE */
  section {
-     padding: 2rem 5%;
+     padding: 3rem 5%;
  }
 
  img {
@@ -131,4 +144,8 @@ a {
 
  .intro > img {
      margin-top: 2rem;
+ }
+
+ .testimonial {
+     background-color: var(--secondary-light-color);
  }
