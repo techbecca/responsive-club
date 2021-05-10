@@ -167,3 +167,7 @@
  .testimonial {
      background-color: var(--secondary-light-color);
  }
+
+ .membership {
+     text-align: center;
+ }
