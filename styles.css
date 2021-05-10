@@ -88,6 +88,7 @@
  /* STRUCTURE */
  section {
      padding: 3rem 5%;
+     text-align: center;
  }
 
  a {
@@ -96,6 +97,22 @@
 
  a:hover {
      opacity: 0.5;
+ }
+
+ footer {
+    padding: 2rem;
+    display: flex;
+     background-color: var(--secondary-dark-color);
+     color: white;
+     font-size: 0.8rem;
+ }
+
+ footer a {
+     color: white;
+ }
+
+ footer>* {
+     width: 45%;
  }
 
  /* IMAGES */
@@ -166,8 +183,4 @@
 
  .testimonial {
      background-color: var(--secondary-light-color);
- }
-
- .membership {
-     text-align: center;
  }
