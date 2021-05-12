@@ -46,6 +46,7 @@
 
  h2 {
      font-size: 2.441rem;
+     text-align: center;
  }
 
  h3 {
@@ -91,34 +92,32 @@
  /* STRUCTURE */
  section {
      padding: 3rem 5%;
-     text-align: center;
- }
-
- a {
-     color: var(--dark-magenta);
- }
- a.attributions {
-     color: var(--rich-black-fogra-29);
- }
-
- a:hover, a::after {
-     opacity: 0.5;
  }
 
  footer {
      padding: 2rem;
      display: flex;
-     background-color: var();
+     flex-flow: row wrap;
+     background-color: var(--rich-black-fogra-29);
      color: white;
-     font-size: 0.8rem;
+     margin: 0 auto;
+ }
+
+ footer > * {
+     margin: 1rem auto;
+     text-align: center;
  }
 
  footer a {
-     color: white;
+     color: var(--fuchsia-crayola);
  }
 
- footer>* {
-     width: 45%;
+ footer a.attributions {
+     color: white;
+ }
+ 
+ footer .button {
+     background-color: var(--fuchsia-crayola)
  }
 
  /* IMAGES */
@@ -138,7 +137,7 @@
      display: block;
  }
 
- /*  BUTTONS etc */
+ /*  BUTTONS, LINKS, etc */
  button,
  .button {
      padding: 0.7rem 1rem;
@@ -150,6 +149,25 @@
      color: white;
      background-color: var(--dark-magenta);
  }
+
+ .nav-button {
+     justify-self: flex-end;
+     margin-left: 1rem;
+ }
+
+  a {
+      color: var(--dark-magenta);
+  }
+
+  a.attributions {
+      color: var(--rich-black-fogra-29);
+  }
+
+  a:hover,
+  a::after {
+      opacity: 0.5;
+  }
+
 
  /* NAV */
  nav>ul>li {
@@ -166,11 +184,6 @@
      justify-content: space-evenly;
      padding-inline-start: 0;
      margin-top: 2rem;
- }
-
- .nav-button {
-     justify-self: flex-end;
-     margin-left: 1rem;
  }
 
  /* PAGE SPECIFIC */
@@ -199,5 +212,21 @@
  }
  
  .games {
+     display: flex;
+     flex-flow: row wrap;
      background-color: var(--linen);
+ }
+
+ .games > div {
+     margin: 1rem auto;
+ }
+
+
+ /* LISTS */
+ ul {
+     padding-inline-start: 0;
+ }
+
+ ul>li {
+     list-style-type: none;
  }

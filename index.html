@@ -16,17 +16,17 @@
 
 <body>
     <header>
-        <nav>
-            <ul>
+        <nav role="navigation">
+            <ul role="presentation">
                 <li><a href="#intro"></a>Home</li>
                 <li><a href="#games"></a>Games</li>
                 <li><a href="#stats"></a>Stats</li>
-                <li class="nav-button"><a class="button primary-button" role=button href="">Join us</a></li>
+                <li class="nav-button"><a class="button primary-button" href="">Join us</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="intro">
+        <section class="intro" role="banner">
             <h1>Tierwood <span class="subtitle">A place to game</span></h1>
             <img src="assets/img/gamer-bedroom-interior-set/2644.jpg" alt="">
             <small><a class="attributions" href="https://www.freepik.com/vectors/background">Background vector created
@@ -40,33 +40,21 @@
                 <figcaption class="quote-author">&mdash; Awesome Person</figcaption>
             </figure>
         </section>
-        <section class="stats">
-            <h2>Statistics</h2>
-            <div class="container"><img src="assets/img/set-colorful-infographic-elements/Test.png" alt="Statistics for games"></div>
-            <small><a class="attributions" href="https://www.freepik.com/vectors/infographic">Infographic vector created by pikisuperstar - www.freepik.com</a></small>
-        </section>
         <section class="games">
             <h2>Games we play</h2>
-            <div class="container">
-                <img src="assets/img/set-colorful-infographic-elements/Untitled.png" alt="">
+            <div role="presentation">
+                <ul role="presentation">
+                    <li>Valheim</li>
+                    <li>League of Legends</li>
+                    <li>Warhammer 40k</li>
+                    <li><small>and the list goes on...</small></li>
+                </ul>
             </div>
-            <div class="container">
-                <img src="assets/img/set-colorful-infographic-elements/Untitled 2.png" alt="">
-            </div>
-            <div class="container">
-                <img src="assets/img/set-colorful-infographic-elements/Untitled 3.png" alt="">
-            </div>
-            <small><a class="attributions" href="https://www.freepik.com/vectors/infographic">Infographic vector created by pikisuperstar - www.freepik.com</a></small>
-        </section>
-        <section class="membership">
-            <a class="primary-button button" href="">Join us on Discord now!</a>
         </section>
     </main>
     <footer>
-        <div class="links"><a href="http://">Discord</a></div>
-        <div class="attributions">
-            <a href="https://www.streamlineicons.com/">Free Icons from the Streamline Icons Pack</a>
-        </div>
+        <a class="primary-button button" href="">Join us on Discord now!</a>
+            <a class="attributions" href="https://www.streamlineicons.com/">Free Icons from the Streamline Icons Pack</a>
     </footer>
 </body>
 
