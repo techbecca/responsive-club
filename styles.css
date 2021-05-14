@@ -9,7 +9,9 @@
 
  }
 
- /* TYPOGRAPHY */
+ /* TYPOGRAPHY 
+ https: //type-scale.com/?size=16&scale=1.125&text=A%20Visual%20Type%20Scale&font=Exo&fontweight=500&bodyfont=Roboto&bodyfontweight=400&lineheight=1.75&backgroundcolor=%23ffffff&fontcolor=%23000000&preview=false
+ */
  html {
      font-size: 100%;
  }
@@ -41,35 +43,38 @@
 
  h1 {
      margin-top: 0;
-     font-size: 3.052rem;
+     font-size: 1.802rem;
  }
 
  h2 {
-     font-size: 2.441rem;
-     text-align: center;
+     font-size: 1.602rem;
  }
 
  h3 {
-     font-size: 1.953rem;
+     font-size: 1.424rem;
  }
 
  h4 {
-     font-size: 1.563rem;
+     font-size: 1.266rem;
  }
 
  h5 {
-     font-size: 1.25rem;
+     font-size: 1.125rem;
  }
 
  small,
  .text_small {
-     font-size: 0.8rem;
+     font-size: 0.889rem;
  }
+
+
 
  .subtitle {
      font-family: 'Codystar', cursive;
      display: block;
-     font-size: 0.6em;
+     font-weight: bold;
+     font-style: normal;
+     font-size: 0.624em;
      margin-top: 1rem;
  }
 
@@ -81,12 +86,12 @@
      font-style: italic;
      font-family: 'Codystar', cursive;
      text-align: center;
-    }
-    
-    .quote-author {
-        text-align: center;
-        font-size: 1.25rem;
-        font-family: 'Exo', sans-serif;
+ }
+
+ .quote-author {
+     text-align: center;
+     font-size: 1.25rem;
+     font-family: 'Exo', sans-serif;
  }
 
  /* STRUCTURE */
@@ -103,7 +108,7 @@
      margin: 0 auto;
  }
 
- footer > * {
+ footer>* {
      margin: 1rem auto;
      text-align: center;
  }
@@ -115,7 +120,7 @@
  footer a.attributions {
      color: white;
  }
- 
+
  footer .button {
      background-color: var(--fuchsia-crayola)
  }
@@ -155,18 +160,18 @@
      margin-left: 1rem;
  }
 
-  a {
-      color: var(--dark-magenta);
-  }
+ a {
+     color: var(--dark-magenta);
+ }
 
-  a.attributions {
-      color: var(--rich-black-fogra-29);
-  }
+ a.attributions {
+     color: var(--rich-black-fogra-29);
+ }
 
-  a:hover,
-  a::after {
-      opacity: 0.5;
-  }
+ a:hover,
+ a::after {
+     opacity: 0.5;
+ }
 
 
  /* NAV */
@@ -210,14 +215,14 @@
  .testimonial .primary-button {
      color: var(--fuchsia-crayola);
  }
- 
+
  .games {
      display: flex;
      flex-flow: row wrap;
      background-color: var(--linen);
  }
 
- .games > div {
+ .games>div {
      margin: 1rem auto;
  }
 
