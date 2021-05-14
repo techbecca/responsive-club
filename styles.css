@@ -81,7 +81,7 @@
  blockquote {
      margin-left: 0;
      margin-right: 0;
-     font-size: 1.563rem;
+     font-size: 1.424rem;
      font-weight: bold;
      font-style: italic;
      font-family: 'Codystar', cursive;
@@ -131,8 +131,8 @@
  }
 
  .container {
-     /* width: 50%; */
-     /* height: 200px; */
+     width: 50%;
+     height: 200px;
      overflow: hidden;
  }
 
@@ -193,13 +193,13 @@
 
  /* PAGE SPECIFIC */
 
- .intro {
+ .banner {
      text-align: center;
      margin-top: 3rem;
 
  }
 
- .intro>img {
+ .banner>img {
      margin-top: 2rem;
  }
 
