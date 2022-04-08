@@ -95,6 +95,14 @@ section {
   padding: 3rem 5%;
 }
 
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 1.8rem 8vw;
+  align-items: center;
+}
+
 footer {
   padding: 2rem;
   display: flex;
@@ -119,6 +127,23 @@ footer a.attributions {
 
 footer .button {
   background-color: var(--fuchsia-crayola);
+}
+
+/* NAV */
+nav > ul > li {
+  list-style-type: none;
+  margin: 0 0.75rem;
+}
+
+nav a {
+  color: var(--rich-black-fogra-29);
+}
+
+nav > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-inline-start: 0;
 }
 
 /* IMAGES */
@@ -167,6 +192,7 @@ button,
   padding: 0.75rem 1.25rem;
   border-radius: 8px;
   text-decoration: none;
+  height: fit-content;
 }
 
 .primary-button {
@@ -174,9 +200,11 @@ button,
   background-color: var(--dark-magenta);
 }
 
-.nav-button {
-  justify-self: flex-end;
-  margin-left: 1rem;
+.primary-button-outlined {
+  color: var(--dark-magenta);
+  background-color: white;
+  text-decoration: underline;
+  border: 1px solid var(--dark-magenta);
 }
 
 a {
@@ -190,23 +218,6 @@ a.attributions {
 a:hover,
 a::after {
   opacity: 0.5;
-}
-
-/* NAV */
-nav > ul > li {
-  list-style-type: none;
-}
-
-nav a {
-  text-decoration: none;
-}
-
-nav > ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding-inline-start: 0;
-  margin-top: 2rem;
 }
 
 /* PAGE SPECIFIC */
@@ -235,13 +246,4 @@ nav > ul {
 
 .games {
   background-color: var(--linen);
-}
-
-/* LISTS */
-ul {
-  padding-inline-start: 0;
-}
-
-ul > li {
-  list-style-type: none;
 }
