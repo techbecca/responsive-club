@@ -137,20 +137,39 @@ footer .button {
 }
 
 /* NAV */
-nav > ul > li {
-  list-style-type: none;
-  margin: 0 0.75rem;
-}
-
-nav a {
-  color: var(--rich-black-fogra-29);
+nav {
+  position: relative;
 }
 
 nav > ul {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding-inline-start: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav > ul > li {
+  margin-right: 1rem;
+}
+
+nav a {
+  color: var(--rich-black-fogra-29);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease, border-bottom 0.3s ease;
+  border-bottom: 2px solid var(--rich-black-fogra-29);
+}
+
+nav a:hover {
+  opacity: 1;
+}
+
+nav a:active {
+  border-bottom: 2px solid var(--dark-magenta);
+  color: var(--dark-magenta);
+  border-radius: 8px;
 }
 
 /* IMAGES */
