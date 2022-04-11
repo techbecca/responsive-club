@@ -1,81 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tierwood Web Club</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
-        href="https://fonts.googleapis.com/css2?family=Codystar&family=Exo:ital,wght@0,500;1,500&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-    <link rel="manifest" href="./site.webmanifest">
-</head>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Codystar&family=Exo:ital,wght@0,500;1,500&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav role="navigation">
-            <ul role="presentation">
-                <li><a href="#intro"></a>Home</li>
-                <li><a href="#games"></a>Games</li>
-                <li><a href="#stats"></a>Stats</li>
-                <li class="nav-button"><a class="button primary-button" href="">Join us</a></li>
-            </ul>
-        </nav>
+      <nav role="navigation" tabindex="0">
+        <ul role="menubar" aria-haspopup="menu">
+          <li>
+            <a role="menuitem" aria-label="Introduction" href="#introduction"
+              >Introduction</a
+            >
+          </li>
+          <li>
+            <a role="menuitem" aria-label="Testimonials" href="#testimonials"
+              >Testimonials</a
+            >
+          </li>
+          <li>
+            <a role="menuitem" aria-label="Games we play" href="#games"
+              >Games We Play</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <a class="button primary-button" href="">Join us</a>
     </header>
     <main>
-        <section class="banner" role="banner">
-            <h1>Tierwood <span class="subtitle">A place to game</span></h1>
-            <img src="assets/img/gamer-bedroom-interior-set/2644.jpg" alt="">
-            <small><a class="attributions" href="https://www.freepik.com/vectors/background">Background vector created
-                    by upklyak - www.freepik.com</a></small>
-        </section>
-        <section class="introduction">
-            <h2>Who are we?</h2>
-            <p>We're a gaming community with LGBTQ people. We're nice. We like animals. We're nerdy. There should be more text here, but I can't come up with anything. We like cats, they meow. Meow meow.</p>
-        </section>
-        <section class="testimonial">
-            <figure>
-                <blockquote>
-                    This is an awesome testimonial by an awesome person. We like cats. They meow. Meow meow.
-                </blockquote>
-                <figcaption class="quote-author">&mdash; Awesome Person, lover of cats.</figcaption>
-            </figure>
-        </section>
-        <section class="games">
-            <h2>Games we play</h2>
-            <div class="gallery" role="presentation">
-                <div class="gallery-item">
-                    <figure>
-                        <div class="container"><img src="" alt=""></div>
-                        <figcaption>Image 1</figcaption>
-                    </figure>
-                </div>
-                <div class="gallery-item">
-                    <figure>
-                        <div class="container"><img src="" alt=""></div>
-                        <figcaption>Image 2</figcaption>
-                    </figure>
-                </div>
-                <div class="gallery-item">
-                    <figure>
-                        <div class="container"><img src="" alt=""></div>
-                        <figcaption>Image 3</figcaption>
-                    </figure>
-                </div>
-            </div>
-        </section>
+      <section class="banner" role="banner">
+        <h1>Tierwood <span class="subtitle">A place to game</span></h1>
+        <img src="assets/img/gamer-bedroom-interior-set/2644.jpg" alt="" />
+        <small
+          ><a
+            class="attributions"
+            href="https://www.freepik.com/vectors/background"
+            >Background vector created by upklyak - www.freepik.com</a
+          ></small
+        >
+      </section>
+      <section id="introduction" class="introduction">
+        <h2>Who are we?</h2>
+        <div>
+          <p>
+            We're a gaming community with LGBTQ people. We're nice. We like
+            animals. We're nerdy. There should be more text here, but I can't
+            come up with anything. We like cats, they meow. Meow meow.
+          </p>
+          <img
+            src="assets/img/vector-graphics/02.-Animal-Care (1).svg"
+            alt=""
+          />
+        </div>
+      </section>
+      <section id="testimonials" class="testimonials">
+        <figure>
+          <blockquote>
+            This is an awesome testimonial by an awesome person. We like cats.
+            They meow. Meow meow.
+          </blockquote>
+          <figcaption class="quote-author">
+            &mdash; Awesome Person, lover of cats.
+          </figcaption>
+        </figure>
+      </section>
+      <section id="games" class="games">
+        <h2>Games we play</h2>
+        <div class="gallery" role="presentation">
+          <figure class="gallery-item">
+            <img src="assets/img/Valheim-Background.jpeg" alt="" />
+            <figcaption>Iron Gate's Valheim</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/img/TFT.jpeg" alt="" />
+            <figcaption>Riot Games' TFT</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/img/league.jpeg" alt="" />
+            <figcaption>Riot Games' League of Legends</figcaption>
+          </figure>
+        </div>
+      </section>
     </main>
     <footer>
-        <a class="primary-button button" href="">Join us on Discord now!</a>
-        <!-- <a class="attributions" href="https://www.streamlineicons.com/">Free Icons from the Streamline Icons Pack</a> -->
+      <img
+        src="assets/img/vector-graphics/04.-Come-Back-Later-cropped.svg"
+        alt=""
+        sizes=""
+        srcset=""
+      />
+      <a class="primary-button button" href="">Join us on Discord</a>
     </footer>
-</body>
-
+  </body>
 </html>
