@@ -179,7 +179,11 @@ img {
 }
 
 .gallery-item {
-  max-width: 23rem;
+  max-width: 20rem;
+}
+
+figure.gallery-item {
+  margin-inline: 3%;
 }
 
 .gallery-item > img {
