@@ -92,7 +92,8 @@ blockquote {
 
 /* STRUCTURE */
 section {
-  padding: 3rem 5%;
+  padding: 2rem 10%;
+  clear: both;
 }
 
 header {
@@ -159,7 +160,6 @@ img {
 
 .container {
   width: 50%;
-  height: 200px;
   overflow: hidden;
 }
 
@@ -230,11 +230,11 @@ a::after {
 
 .banner {
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .banner > img {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .testimonial {
@@ -252,4 +252,21 @@ a::after {
 
 .games {
   background-color: var(--linen);
+}
+
+.introduction div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.introduction img {
+  width: 22rem;
+  margin: 1rem;
+}
+
+.introduction p {
+  max-width: 45rem;
+  margin: 1rem;
 }
