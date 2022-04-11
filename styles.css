@@ -100,8 +100,10 @@ header {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  padding: 1rem 15vw;
   align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.25rem 8rem;
 }
 
 footer {
@@ -146,10 +148,6 @@ nav > ul {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-nav > ul > li {
-  margin-right: 1rem;
 }
 
 nav a {
@@ -222,6 +220,13 @@ button,
   border-radius: 8px;
   text-decoration: none;
   height: fit-content;
+}
+
+.small-button {
+  border-radius: 8px;
+  text-decoration: none;
+  height: fit-content;
+  padding: 0.5rem 1rem;
 }
 
 .primary-button {
