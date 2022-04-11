@@ -16,11 +16,23 @@
 
   <body>
     <header>
-      <nav role="navigation">
-        <ul role="presentation">
-          <li><a class="" href="#intro">Home</a></li>
-          <li><a class="" href="#games">Games</a></li>
-          <li><a class="" href="#stats">Stats</a></li>
+      <nav role="navigation" tabindex="0">
+        <ul role="menubar" aria-haspopup="menu">
+          <li>
+            <a role="menuitem" aria-label="Introduction" href="#introduction"
+              >Introduction</a
+            >
+          </li>
+          <li>
+            <a role="menuitem" aria-label="Testimonials" href="#testimonials"
+              >Testimonials</a
+            >
+          </li>
+          <li>
+            <a role="menuitem" aria-label="Games we play" href="#games"
+              >Games We Play</a
+            >
+          </li>
         </ul>
       </nav>
       <a class="button primary-button" href="">Join us</a>
@@ -37,7 +49,7 @@
           ></small
         >
       </section>
-      <section class="introduction">
+      <section id="introduction" class="introduction">
         <h2>Who are we?</h2>
         <div>
           <p>
@@ -45,10 +57,13 @@
             animals. We're nerdy. There should be more text here, but I can't
             come up with anything. We like cats, they meow. Meow meow.
           </p>
-          <img src="assets/img/vector-graphics/02.-Animal-Care.svg" alt="" />
+          <img
+            src="assets/img/vector-graphics/02.-Animal-Care (1).svg"
+            alt=""
+          />
         </div>
       </section>
-      <section class="testimonial">
+      <section id="testimonials" class="testimonials">
         <figure>
           <blockquote>
             This is an awesome testimonial by an awesome person. We like cats.
@@ -59,7 +74,7 @@
           </figcaption>
         </figure>
       </section>
-      <section class="games">
+      <section id="games" class="games">
         <h2>Games we play</h2>
         <div class="gallery" role="presentation">
           <figure class="gallery-item">
