@@ -40,90 +40,118 @@
 
   <body>
     <header>
-      <nav role="navigation" tabindex="0">
-        <ul role="menubar" aria-haspopup="menu">
-          <li>
-            <a role="menuitem" aria-label="Introduction" href="#introduction"
-              >Introduction</a
-            >
-          </li>
-          <li>
-            <a role="menuitem" aria-label="Testimonials" href="#testimonials"
-              >Testimonials</a
-            >
-          </li>
-          <li>
-            <a role="menuitem" aria-label="Games we play" href="#games"
-              >Games We Play</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <a class="button primary-button" href="">Join us</a>
+      <div class="section-content-container flexbox-container">
+        <nav role="navigation" tabindex="0">
+          <input id="menu-toggle" type="checkbox" />
+          <label class="menu-button-container" for="menu-toggle">
+            <div class="menu-button"></div>
+          </label>
+          <ul role="menubar" class="menu" aria-haspopup="menu">
+            <li>
+              <a role="menuitem" aria-label="Introduction" href="#introduction"
+                >Introduction</a
+              >
+            </li>
+            <li>
+              <a role="menuitem" aria-label="Testimonials" href="#testimonials"
+                >Testimonials</a
+              >
+            </li>
+            <li>
+              <a role="menuitem" aria-label="Games we play" href="#games"
+                >Games We Play</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <a
+          class="small-button primary-button"
+          href=""
+          aria-label="Join us"
+          role="button"
+          >Join us</a
+        >
+      </div>
     </header>
     <main>
       <section class="banner" role="banner">
-        <h1>Tierwood <span class="subtitle">A place to game</span></h1>
-        <img src="assets/img/gamer-bedroom-interior-set/2644.jpg" alt="" />
-        <small
-          ><a
-            class="attributions"
-            href="https://www.freepik.com/vectors/background"
-            >Background vector created by upklyak - www.freepik.com</a
-          ></small
-        >
+        <div class="section-content-container">
+          <h1>Tierwood <span class="subtitle">A place to game</span></h1>
+          <img src="assets/img/gamer-bedroom-interior-set/2644.jpg" alt="" />
+          <small
+            ><a
+              class="attributions"
+              href="https://www.freepik.com/vectors/background"
+              >Background vector created by upklyak - www.freepik.com</a
+            ></small
+          >
+        </div>
       </section>
       <section id="introduction" class="introduction">
-        <h2>Who are we?</h2>
-        <div>
-          <p>
-            We're a gaming community with LGBTQ people. We're nice. We like
-            animals. We're nerdy. There should be more text here, but I can't
-            come up with anything. We like cats, they meow. Meow meow.
-          </p>
-          <img
-            src="assets/img/vector-graphics/02.-Animal-Care (1).svg"
-            alt=""
-          />
+        <div class="section-content-container">
+          <h2>Who are we?</h2>
+          <div class="flexbox-container">
+            <p>
+              We're a gaming community with LGBTQ people. We're nice. We like
+              animals. We're nerdy. There should be more text here, but I can't
+              come up with anything. We like cats, they meow. Meow meow.
+            </p>
+            <img
+              src="assets/img/vector-graphics/02.-Animal-Care (1).svg"
+              alt=""
+            />
+          </div>
         </div>
       </section>
       <section id="testimonials" class="testimonials">
-        <figure>
-          <blockquote>
-            This is an awesome testimonial by an awesome person. We like cats.
-            They meow. Meow meow.
-          </blockquote>
-          <figcaption class="quote-author">
-            &mdash; Awesome Person, lover of cats.
-          </figcaption>
-        </figure>
+        <div class="section-content-container">
+          <figure>
+            <blockquote>
+              This is an awesome testimonial by an awesome person. We like cats.
+              They meow. Meow meow.
+            </blockquote>
+            <figcaption class="quote-author">
+              &mdash; Awesome Person, lover of cats.
+            </figcaption>
+          </figure>
+        </div>
       </section>
       <section id="games" class="games">
-        <h2>Games we play</h2>
-        <div class="gallery" role="presentation">
-          <figure class="gallery-item">
-            <img src="assets/img/Valheim-Background.jpeg" alt="" />
-            <figcaption>Iron Gate's Valheim</figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <img src="assets/img/TFT.jpeg" alt="" />
-            <figcaption>Riot Games' TFT</figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <img src="assets/img/league.jpeg" alt="" />
-            <figcaption>Riot Games' League of Legends</figcaption>
-          </figure>
+        <div class="section-content-container">
+          <h2>Games we play</h2>
+          <div class="gallery" role="presentation">
+            <figure class="gallery-item">
+              <img src="assets/img/Valheim-Background.jpeg" alt="" />
+              <figcaption>Iron Gate's Valheim</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="assets/img/TFT.jpeg" alt="" />
+              <figcaption>Riot Games' TFT</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="assets/img/league.jpeg" alt="" />
+              <figcaption>Riot Games' League of Legends</figcaption>
+            </figure>
+          </div>
         </div>
       </section>
     </main>
     <footer>
-      <img
-        src="assets/img/vector-graphics/04.-Come-Back-Later-cropped.svg"
-        alt=""
-        sizes=""
-        srcset=""
-      />
-      <a class="primary-button button" href="">Join us on Discord</a>
+      <div class="section-content-container flexbox-container">
+        <img
+          src="assets/img/vector-graphics/04.-Come-Back-Later-cropped.svg"
+          alt=""
+          sizes=""
+          srcset=""
+        />
+        <a
+          class="primary-button button"
+          href=""
+          aria-label="Join us on Discord"
+          role="button"
+          >Join us on Discord</a
+        >
+      </div>
     </footer>
   </body>
 </html>
