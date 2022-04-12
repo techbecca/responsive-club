@@ -3,6 +3,7 @@
   --spanish-orange: #e66724ff;
   --linen: #ffede1ff;
   --rich-black-fogra-29: #011627ff;
+  --rich-black-fogra-29-opacity: #01162784;
   --fuchsia-crayola: #b45cbaff;
   --dark-magenta: #811790ff;
 }
@@ -104,6 +105,8 @@ header {
   max-width: 1400px;
   margin: 0 auto;
   padding: 1.25rem 10%;
+  box-sizing: border-box;
+  height: 5.25rem;
 }
 
 footer {
@@ -139,18 +142,18 @@ footer .button {
 }
 
 /* NAV */
-nav {
-  position: relative;
-}
-
-nav > ul {
+.menu {
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-nav a {
+.menu a {
+  margin: 0 1rem;
+}
+
+.menu a {
   color: var(--rich-black-fogra-29);
   text-decoration: none;
   text-transform: uppercase;
@@ -160,14 +163,117 @@ nav a {
   border-bottom: 2px solid var(--rich-black-fogra-29);
 }
 
-nav a:hover {
+.menu a:hover {
   opacity: 1;
 }
 
-nav a:active {
+.menu a:active {
   border-bottom: 2px solid var(--dark-magenta);
   color: var(--dark-magenta);
   border-radius: 8px;
+}
+
+/* NAV HAMBURGER MENU */
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: var(--dark-magenta);
+  position: absolute;
+  height: 0.25rem;
+  width: 1.875rem;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: "";
+  margin-top: -0.5rem;
+}
+
+.menu-button::after {
+  content: "";
+  margin-top: 0.5rem;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: transparent;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media screen and (max-width: 768px) {
+  .menu-button-container {
+    display: flex;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 5.25rem;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu a {
+    display: none;
+  }
+
+  #menu-toggle:checked ~ .menu a {
+    display: list-item;
+  }
+
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  #menu-toggle:checked ~ .menu li {
+    background-color: white;
+    border: 1px solid var(--rich-black-fogra-29-opacity);
+    height: 3rem;
+    padding: 1rem;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: transparent !important;
+  }
 }
 
 /* IMAGES */

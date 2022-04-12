@@ -41,7 +41,11 @@
   <body>
     <header>
       <nav role="navigation" tabindex="0">
-        <ul role="menubar" aria-haspopup="menu">
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <ul role="menubar" class="menu" aria-haspopup="menu">
           <li>
             <a role="menuitem" aria-label="Introduction" href="#introduction"
               >Introduction</a
