@@ -281,12 +281,12 @@ img {
   max-width: 100%;
 }
 
-.container {
+.img-container {
   width: 50%;
   overflow: hidden;
 }
 
-.container img {
+.img-container img {
   max-width: 100%;
   height: auto;
   display: block;
